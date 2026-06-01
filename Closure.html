@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Closure · On Balance · The Domino Theory · Team D 11/1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{ --paper:#f3ead7; --paper-2:#ece0c7; --ink:#211d18; --ink-soft:#473c30; --olive:#414a2e; --olive-deep:#2f3621; --red:#9a2b1e; --red-deep:#7a2115; --rule:#c4b594; --gold:#b08545; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:'Spectral',Georgia,serif; color:var(--ink); background:var(--olive-deep); background-image:radial-gradient(circle at 15% 10%, rgba(176,133,69,.16), transparent 45%), radial-gradient(circle at 85% 90%, rgba(0,0,0,.35), transparent 50%); min-height:100vh; padding:36px 18px; -webkit-font-smoothing:antialiased; }
+  .wrap{ max-width:980px; margin:0 auto; }
+  .head{ text-align:center; color:var(--paper); margin-bottom:30px; }
+  .kick{ font-family:'Oswald',sans-serif; text-transform:uppercase; letter-spacing:.32em; font-size:11px; color:var(--gold); }
+  .head h1{ font-family:'Oswald',sans-serif; text-transform:uppercase; font-weight:700; font-size:clamp(34px,8vw,60px); line-height:.9; margin:8px 0 14px; }
+  .head h1 em{ font-style:normal; color:var(--gold); }
+  .resolution{ font-style:italic; font-size:clamp(14px,2.4vw,17px); line-height:1.55; color:#e6d9bd; max-width:62ch; margin:0 auto; padding-top:14px; border-top:1px solid rgba(255,255,255,.2); }
+  .team{ font-family:'Oswald',sans-serif; color:var(--gold); letter-spacing:.18em; font-size:12px; font-weight:600; margin-top:14px; }
+  .grid{ display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-bottom:26px; }
+  .card{ background:var(--paper); border-radius:2px; padding:26px 26px 28px; position:relative; overflow:hidden; box-shadow:0 20px 44px rgba(0,0,0,.4); }
+  .card::after{ content:""; position:absolute; inset:0; pointer-events:none; mix-blend-mode:multiply; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E"); }
+  .card .tag{ display:inline-block; font-family:'Oswald',sans-serif; text-transform:uppercase; font-weight:600; letter-spacing:.1em; font-size:14px; color:var(--paper); padding:6px 14px; margin-bottom:4px; }
+  .yes .tag{ background:var(--olive); } .no .tag{ background:var(--red); }
+  .card h2{ font-family:'Oswald',sans-serif; text-transform:uppercase; font-weight:600; font-size:17px; color:var(--ink); margin:10px 0 16px; line-height:1.1; }
+  .yes h2{ color:var(--olive-deep); } .no h2{ color:var(--red-deep); }
+  ol{ list-style:none; counter-reset:n; }
+  ol li{ position:relative; padding:0 0 15px 40px; font-size:14.5px; line-height:1.45; color:var(--ink-soft); }
+  ol li:last-child{ padding-bottom:0; }
+  ol li::before{ counter-increment:n; content:counter(n); position:absolute; left:0; top:-2px; width:26px; height:26px; border-radius:50%; font-family:'Oswald',sans-serif; font-weight:600; font-size:14px; color:var(--paper); display:flex; align-items:center; justify-content:center; }
+  .yes ol li::before{ background:var(--olive); } .no ol li::before{ background:var(--red); }
+  ol li b{ color:var(--ink); }
+  .verdict{ background:rgba(243,234,215,.07); border:1px solid rgba(176,133,69,.4); padding:26px 30px; text-align:center; color:var(--paper); }
+  .verdict .vlabel{ font-family:'Oswald',sans-serif; text-transform:uppercase; letter-spacing:.24em; font-size:11px; color:var(--gold); margin-bottom:10px; }
+  .verdict p{ font-size:clamp(15px,2.5vw,18px); line-height:1.6; max-width:70ch; margin:0 auto; }
+  .verdict p b{ color:#fff; }
+  .ask{ margin-top:18px; padding-top:16px; border-top:1px solid rgba(255,255,255,.16); font-style:italic; font-size:14px; color:#e6d9bd; }
+  @media (max-width:680px){ .grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <div class="kick">Roundtable Closure</div>
+      <h1>On <em>Balance</em></h1>
+      <p class="resolution">Was the “Domino Theory” enough of a concern to justify America exhausting its financial and military resources in Vietnam, rather than reserving them for domestic issues like poverty and civil rights?</p>
+      <div class="team">TEAM D · 11/1</div>
+    </div>
+
+    <div class="grid">
+      <div class="card yes">
+        <span class="tag">Yes</span>
+        <h2>The theory justified involvement</h2>
+        <ol>
+          <li><b>The pattern looked real and recent.</b> China in 1949 and Korea from 1950 to 1953 made a chain reaction seem genuinely possible.</li>
+          <li><b>The stakes were concrete.</b> Eisenhower could point to real resources like tin, tungsten, and rubber, and to Japan's dependence on regional trade.</li>
+          <li><b>Geography and alliances were on the line.</b> A communist Southeast Asia threatened the U.S. defense line in the Pacific and unsettled allies like Australia and New Zealand.</li>
+          <li><b>Containment depended on credibility.</b> Standing aside risked making every American promise to its allies look hollow.</li>
+        </ol>
+      </div>
+
+      <div class="card no">
+        <span class="tag">No</span>
+        <h2>The cost was too high</h2>
+        <ol>
+          <li><b>The forecast came up short.</b> After Saigon fell in 1975, most of the neighboring dominoes stayed standing.</li>
+          <li><b>It misread the country.</b> Ho Chi Minh led a nationalist, anti-colonial movement that the theory reduced to a Soviet puppet.</li>
+          <li><b>The price at home was steep.</b> The same years held <i>Brown v. Board</i>, deep poverty, and the civil rights struggle, and MLK named the trade-off directly in 1967.</li>
+          <li><b>It strained the Constitution.</b> Anti-communism became an open-ended justification that pulled war powers toward the president and away from Congress.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="verdict">
+      <div class="vlabel">Our group's answer</div>
+      <p>The Domino Theory was a <b>reasonable Cold War fear</b>, and on balance it was still <b>not enough</b> to justify exhausting America's military and financial resources in Vietnam, especially during the very years when poverty and civil rights at home were demanding the country's attention.</p>
+      <div class="ask">Now you decide. If you had been alive in 1954 and believed every word Eisenhower said, would you still have sent the money, and how would you explain that choice to the people waiting at home?</div>
+    </div>
+  </div>
+</body>
+</html>
