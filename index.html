@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Itinerary · The Domino Theory Roundtable · Team D 11/1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{ --paper:#f3ead7; --paper-2:#ece0c7; --ink:#211d18; --ink-soft:#473c30; --olive:#414a2e; --olive-deep:#2f3621; --red:#9a2b1e; --rule:#c4b594; --gold:#b08545; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:'Spectral',Georgia,serif; color:var(--ink); background:#2b2620; background-image:radial-gradient(circle at 50% 0%, rgba(176,133,69,.10), transparent 55%); min-height:100vh; padding:34px 16px; -webkit-font-smoothing:antialiased; }
+  .doc{ max-width:760px; margin:0 auto; background:var(--paper); background-image:radial-gradient(circle at 18% 12%, rgba(176,133,69,.07), transparent 55%), radial-gradient(circle at 85% 92%, rgba(65,74,46,.06), transparent 55%); box-shadow:0 28px 60px rgba(0,0,0,.5); position:relative; overflow:hidden; }
+  .doc::after{ content:""; position:absolute; inset:0; pointer-events:none; mix-blend-mode:multiply; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E"); }
+  header{ background:var(--olive-deep); color:var(--paper); padding:34px 38px 30px; position:relative; overflow:hidden; }
+  header::before{ content:""; position:absolute; inset:0; background:radial-gradient(circle at 80% 20%, rgba(176,133,69,.20), transparent 50%); }
+  header > *{ position:relative; z-index:1; }
+  .kick{ font-family:'Oswald',sans-serif; text-transform:uppercase; letter-spacing:.3em; font-size:11px; color:var(--gold); }
+  header h1{ font-family:'Oswald',sans-serif; text-transform:uppercase; font-weight:700; font-size:clamp(30px,7vw,46px); line-height:.92; margin:8px 0 6px; }
+  header h1 span{ display:block; font-weight:300; font-size:.55em; color:var(--paper-2); }
+  .ribbon{ height:2px; width:60px; background:var(--red); margin:14px 0; }
+  header .meta{ font-size:13px; color:#cdbf9f; line-height:1.6; }
+  header .meta b{ color:var(--paper); font-family:'Oswald',sans-serif; font-weight:500; letter-spacing:.06em; }
+  .team{ font-family:'Oswald',sans-serif; color:var(--gold); letter-spacing:.14em; font-size:13px; font-weight:600; margin-bottom:6px; }
+  .format-pill{ display:inline-block; margin-top:12px; border:1px solid var(--gold); color:var(--gold); font-family:'Oswald',sans-serif; text-transform:uppercase; letter-spacing:.16em; font-size:10px; padding:5px 12px; }
+  .body{ padding:30px 38px 14px; position:relative; z-index:1; }
+  .lead{ font-style:italic; font-size:15px; line-height:1.6; color:var(--ink-soft); margin-bottom:26px; border-left:3px solid var(--gold); padding-left:14px; }
+  .secLabel{ font-family:'Oswald',sans-serif; text-transform:uppercase; letter-spacing:.2em; font-size:11px; color:var(--red); margin-bottom:16px; }
+  .run{ list-style:none; position:relative; }
+  .run::before{ content:""; position:absolute; left:80px; top:6px; bottom:14px; width:1px; background:var(--rule); }
+  .run li{ position:relative; display:grid; grid-template-columns:64px 1fr; gap:32px; padding-bottom:20px; }
+  .time{ font-family:'Oswald',sans-serif; font-weight:600; font-size:14px; color:var(--olive); text-align:right; padding-top:1px; white-space:nowrap; }
+  .seg{ position:relative; }
+  .seg::before{ content:""; position:absolute; left:-21px; top:4px; width:11px; height:11px; border-radius:50%; background:var(--paper); border:2.5px solid var(--olive); }
+  .seg.q::before{ background:var(--olive); }
+  .seg.fin::before{ border-color:var(--red); background:var(--red); }
+  .seg h3{ font-family:'Oswald',sans-serif; text-transform:uppercase; font-weight:600; font-size:15px; letter-spacing:.02em; color:var(--ink); line-height:1.1; }
+  .seg p{ font-size:13px; color:var(--ink-soft); margin-top:3px; line-height:1.45; }
+  .qnum{ color:var(--red); font-weight:700; }
+  .footer{ margin:8px 38px 0; padding:18px 0 30px; border-top:1px dashed var(--rule); }
+  .note{ background:var(--paper-2); border-left:3px solid var(--gold); padding:14px 16px; font-size:13px; line-height:1.5; color:var(--ink-soft); }
+  .note b{ font-family:'Oswald',sans-serif; letter-spacing:.06em; color:var(--ink); }
+  .credit{ font-size:11px; color:#9a8c6d; margin-top:16px; letter-spacing:.04em; }
+  @media (max-width:520px){ header,.body{ padding-left:22px; padding-right:22px; } .footer{ margin-left:22px; margin-right:22px; } .run::before{ left:56px; } .run li{ grid-template-columns:44px 1fr; gap:28px; } }
+</style>
+</head>
+<body>
+  <div class="doc">
+    <header>
+      <div class="kick">THE VIETNAM WAR EXPERIENCE · 1954 TO 1964</div>
+      <h1>Roundtable Itinerary<span>The Domino Theory</span></h1>
+      <div class="ribbon"></div>
+      <div class="meta">
+        <b>The question:</b> Was the Domino Theory enough to justify spending America's money and military on Vietnam, rather than on poverty and civil rights at home?<br>
+      </div>
+      <div class="format-pill">Format · Socratic Seminar · about 30 min</div>
+    </header>
+
+    <div class="body">
+      <div class="team">HOSTED BY TEAM D · 11/1 · ANVITHA, ADITI, ASHWATH &amp; MUYE</div>
+      <p class="lead">Our aim is to weigh both sides of one hard question and reach an honest conclusion together. Partway through we open the floor, so arrive ready to jump in.</p>
+
+      <div class="secLabel">Order of Discussion</div>
+      <ul class="run">
+        <li><div class="time">0:00</div><div class="seg"><h3>Opening &amp; Framing</h3><p>Setting the scene in 1954 and introducing our two sources.</p></div></li>
+        <li><div class="time">2:00</div><div class="seg q"><h3><span class="qnum">Q1 ·</span> Eisenhower's Strongest Argument</h3><p>What made the Domino Theory so convincing in 1954.</p></div></li>
+        <li><div class="time">6:00</div><div class="seg q"><h3><span class="qnum">Q2 ·</span> Does Chomsky Challenge It?</h3><p>The moral counter-case, and the question of who gave America the right to decide.</p></div></li>
+        <li><div class="time">10:00</div><div class="seg q"><h3><span class="qnum">Q3 ·</span> Reasonable Fear, or Exaggerated?</h3><p>Telling a real risk apart from a panic.</p></div></li>
+        <li><div class="time">14:00</div><div class="seg q"><h3><span class="qnum">Q4 ·</span> Should Home Have Come First?</h3><p>The guns-versus-butter choice between Vietnam and priorities at home.</p></div></li>
+        <li><div class="time">19:00</div><div class="seg q"><h3><span class="qnum">Q5 ·</span> What It Reveals About Presidential Power</h3><p>How the fear shifted war powers toward the president.</p></div></li>
+        <li><div class="time">23:00</div><div class="seg"><h3>Beyond the Sources</h3><p>Southeast Asia, or American credibility, and how credibility becomes a trap.</p></div></li>
+        <li><div class="time">26:00</div><div class="seg fin"><h3>Final Round &amp; Closure</h3><p>"On balance," plus our four points for each side of the question.</p></div></li>
+        <li><div class="time">29:00</div><div class="seg fin"><h3>Open Floor</h3><p>Your turn. Pick a side and tell us where we went wrong.</p></div></li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <div class="note"><b>Before you arrive:</b> skim the brochure and the two sources in this kit, Eisenhower's 1954 press conference and Chomsky's <i>Responsibility</i>. Come with an opinion you are willing to defend, even a rough one.</div>
+      <div class="credit">Prep kit · "The Reasons" roundtable · Hosted by Team D · 11/1: Anvitha, Aditi, Ashwath &amp; Muye</div>
+    </div>
+  </div>
+</body>
+</html>
